@@ -17,7 +17,7 @@ actor {
    	post : shared (Text) -> async ();
  	posts : shared query (Time.Time) -> async [Message];
 	timeline : shared (Time.Time) -> async [Message];
-	getName : shared query () -> async [Text];
+	getName : shared query () -> async Text;
 	setName : shared (Text) -> async ();
     };
 
